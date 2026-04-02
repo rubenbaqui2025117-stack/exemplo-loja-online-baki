@@ -1,0 +1,4 @@
+<h1>{{ artigo.nome }}</h1>
+<h2><a href="{% url 'loja:categoria' artigo.categoria.id %}">{{ artigo.categoria }}</a></h2>
+<h3><a href="{% url 'loja:vendedor' artigo.vendedor.id %}">{{ artigo.vendedor }}</a></h3>
+<p>{{ artigo.descricao }}</p>

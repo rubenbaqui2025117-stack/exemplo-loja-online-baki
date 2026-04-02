@@ -1,0 +1,9 @@
+{% if lista_de_artigos %}
+    <ul>
+    {% for artigo in lista_de_artigos %}
+        <li><a href="{% url 'loja:artigo' artigo.id %}">{{ artigo.nome }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Não há artigos.</p>
+{% endif %}
